@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- Canvas background -->
+  <canvas id="bg-canvas"></canvas>
+    <div class="background">
+        <div class="ball" style="width: 60px; height: 60px; background: #ff6b6b; left: 10%; animation-delay: 0s;"></div>
+        <div class="ball" style="width: 40px; height: 40px; background: #6bc1ff; left: 30%; animation-delay: 1s;"></div>
+        <div class="ball" style="width: 80px; height: 80px; background: #ffd93d; left: 50%; animation-delay: 2s;"></div>
+        <div class="ball" style="width: 50px; height: 50px; background: #9dff6b; left: 70%; animation-delay: 1.5s;"></div>
+        <div class="ball" style="width: 30px; height: 30px; background: #ff8cc6; left: 90%; animation-delay: 0.5s;"></div>
+    </div>
+    <div class="container guess-container">
+        <div class="header">
+            <h1 id="title">Guess the Number</h1>
+        </div>
+        <div class="main ">
+            
+            <p id="message">Guess a number between 1 and 100</p>
+
+            <p id="hint"></p>
+
+            <input type="number" id="guess" placeholder="Enter your guess">
+
+            <button id="guessButton">Guess</button>
+
+            <div id="guess-history"></div>
+        </div>
+    </div>
+
+    <script src="canvas.js"></script>
+    <script src="index.js"></script>
+
+    <!-- <script src="lesson.js"></script>
+    <script src="async.js"></script> -->
+</body>
+
+
+</html>
