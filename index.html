@@ -22,7 +22,16 @@
         <div class="header">
             <h1 id="title">Guess the Number</h1>
         </div>
+        <button id="pauseButton">Pause/Resume</button>
+
         <div class="main ">
+            <!-- ✅ 3. Difficulty Levels -->
+            <select id="difficulty">
+              <option value="3">Easy (3 attempts)</option>
+              <option value="5">Medium (5 attempts)</option>
+              <option value="7">Hard (7 attempts)</option>
+            </select>
+            
             
             <p id="message">Guess a number between 1 and 100</p>
 
@@ -31,6 +40,9 @@
             <input type="number" id="guess" placeholder="Enter your guess">
 
             <button id="guessButton">Guess</button>
+            <!-- ✅ 1. Play Again / Reset -->
+            <button id="resetButton">Play Again</button>
+
 
             <div id="guess-history"></div>
         </div>
